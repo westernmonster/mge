@@ -1,0 +1,105 @@
+# header menu
+[[main]]
+identifier = "about"
+name = "About Us"
+url = "/about/"
+weight = 1
+
+[[main]]
+identifier = "services"
+name = "Services"
+url = "#"
+weight = 2
+
+[[main]]
+identifier = "news"
+name = "New & Insights"
+url = "/news/"
+weight = 3
+
+[[main]]
+identifier = "investors"
+name = "Investors"
+url = "/investors/"
+weight = 4
+
+[[main]]
+identifier = "mge"
+parent = "services"
+name = "Mewah Global Enterprise"
+url = "/services/mge/"
+weight = 5
+
+[[main]]
+identifier = "pki"
+parent = "services"
+name = "PTMA Konsultan Indonesia"
+url = "/services/pki/"
+weight = 6
+
+[[main]]
+identifier = "mti"
+parent = "services"
+name = "Newah Tek Indonesia"
+url = "/services/mti/"
+weight = 7
+
+[[main]]
+identifier = "careers"
+name = "Careers"
+url = "/careers/"
+weight = 8
+
+[[main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 9
+
+
+# footer menu
+[[footer]]
+name = "About Us"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Services"
+url = "/services"
+weight = 2
+
+[[footer]]
+name = "New & Insights"
+url = "/news"
+weight = 3
+
+[[footer]]
+name = "Investors"
+url = "/investors"
+weight = 4
+
+[[footer]]
+name = "Mewah Global Enterprise"
+url = "/services/mge"
+weight = 5
+
+[[footer]]
+name = "PTMA Konsultan Indonesia"
+url = "/services/pki"
+weight = 6
+
+[[footer]]
+name = "Newah Tek Indonesia"
+url = "/services/mti"
+weight = 7
+
+[[footer]]
+name = "Carreers"
+url = "/careers"
+weight = 8
+
+[[footer]]
+name = "Contact"
+url = "/contact"
+weight = 9
+

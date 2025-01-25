@@ -1,0 +1,29 @@
+{
+    "main": [
+        {
+            "name": "facebook",
+            "icon": "images/icons8-facebook.svg",
+            "link": "https://www.facebook.com/"
+        },
+        {
+            "name": "instagram",
+            "icon": "images/icons8-instagram.svg",
+            "link": "https://www.instagram.com/"
+        },
+        {
+            "name": "X",
+            "icon": "images/icons8-x.svg",
+            "link": "https://www.x.com/"
+        },
+        {
+            "name": "youtube",
+            "icon": "images/icons8-youtube.svg",
+            "link": "https://www.youtube.com/"
+        },
+        {
+            "name": "linkedin",
+            "icon": "images/icons8-linkedin.svg",
+            "link": "https://www.linkedin.com/"
+        }
+    ]
+}

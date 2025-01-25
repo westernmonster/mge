@@ -1,0 +1,24 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <!-- head (don't cache it) -->
+    {{ partialCached "core/head.html" . }}
+
+
+    <!-- style (always cache it) -->
+    {{ partialCached "core/style.html" . }}
+  </head>
+
+  <body>
+    <!-- header (don't cache it) -->
+    {{ partial "core/header.html" . }}
+
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- footer -->
+    {{ partial "core/footer.html" . }}
+  </body>
+</html>

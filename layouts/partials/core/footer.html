@@ -1,0 +1,204 @@
+<footer class="bg-theme-light ">
+  <div class="container">
+    <div class="row  py-10">
+      <div class="lg:col-8 mb-8  lg:mb-0">
+        <div class="grid grid-cols-3 gap-x-8 gap-y-10 lg:grid-cols-3">
+          <div>
+            <ul>
+              {{ with index site.Menus.footer 0 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+
+              {{ with index site.Menus.footer 1 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+              {{ with index site.Menus.footer 2 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+              {{ with index site.Menus.footer 3 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div>
+            <ul>
+              {{ with index site.Menus.footer 4 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+
+              {{ with index site.Menus.footer 5 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+              {{ with index site.Menus.footer 6 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div>
+            <ul>
+              {{ with index site.Menus.footer 7 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+
+              {{ with index site.Menus.footer 8 }}
+                <li class="m-3 ">
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{ if findRE `^#` .URL }}
+                      {{ if not $.IsHome }}
+                        {{ site.Home.RelPermalink }}
+                      {{ end }}{{ .URL }}
+                    {{ else }}
+                      {{ .URL | relLangURL }}
+                    {{ end }}"
+                    >{{ .Name }}</a
+                  >
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-4 mb-8 text-center lg:mb-0">
+        <div>
+          {{ site.Title }}
+        </div>
+        <ul class="social-icons">
+          {{ range site.Data.social.main }}
+            <li>
+              <a
+                target="_blank"
+                aria-label="{{ .name }}"
+                rel="nofollow noopener"
+                href="{{ .link | safeURL }}">
+                {{ $image := resources.Get .icon }}
+                <img src="{{ $image.RelPermalink }}" />
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-border dark:border-darkmode-border border-t py-7">
+    <div class="text-light dark:text-darkmode-light container text-center">
+      <p>
+        {{ site.Params.copyright | markdownify }}
+      </p>
+    </div>
+  </div>
+</footer>
