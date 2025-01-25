@@ -84,15 +84,10 @@
           </li>
         {{ end }}
       {{ end }}
-      {{ if site.Params.navigation_button.enable }}
-        <li class="mt-4 inline-block lg:hidden">
-          <a
-            class="btn btn-outline-primary btn-sm"
-            href="{{ site.Params.navigation_button.link | relLangURL }}">
-            {{ site.Params.navigation_button.label }}
-          </a>
-        </li>
-      {{ end }}
     </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-theme-light rounded") }}
+    </div>
   </nav>
 </header>

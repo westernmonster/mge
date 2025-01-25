@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <!-- cache partial only in production -->
+    {{ if hugo.IsProduction }}
+      {{ partialCached "preloader.html" . }}
+    {{ else }}
+      {{ partial "preloader.html" . }}
+
+
+      <!-- tailwind size indicator -->
+      {{ partial "components/tw-size-indicator.html" . }}
+    {{ end }}
+
+
     <!-- header (don't cache it) -->
     {{ partial "core/header.html" . }}
 
@@ -20,5 +32,9 @@
 
     <!-- footer -->
     {{ partial "core/footer.html" . }}
+
+
+    <!-- script (always cache it) -->
+    {{ partialCached "core/script.html" . }}
   </body>
 </html>
