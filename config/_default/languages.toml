@@ -1,9 +1,9 @@
 ################ English language ##################
 [en]
-languageName = "En"
+languageName = "English"
 languageCode = "en-us"
 weight = 1
 [cn]
-languageName = "Zh"
+languageName = "简体中文"
 languageCode = "zh-cn"
 weight = 2

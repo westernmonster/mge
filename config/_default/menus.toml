@@ -64,11 +64,6 @@ url = "/about"
 weight = 1
 
 [[footer]]
-name = "Services"
-url = "/services"
-weight = 2
-
-[[footer]]
 name = "New & Insights"
 url = "/news"
 weight = 3
