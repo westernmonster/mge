@@ -50,7 +50,7 @@ name = "Careers"
 url = "/careers/"
 weight = 8
 
-[[main]]
+[[aside]]
 identifier = "contact"
 name = "Contact"
 url = "/contact/"

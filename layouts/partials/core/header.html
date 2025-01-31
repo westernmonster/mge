@@ -1,5 +1,12 @@
 <header class="header">
-  <nav class="navbar container">
+  <nav class="navbar container border-border border-b">
+
+    <div class="order-0">
+      <!-- navbar brand/logo -->
+      <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
+        {{ partial "logo" }}
+      </a>
+    </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
@@ -44,11 +51,7 @@
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
                 <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link {{ if $active }}
-                      active
-                    {{- end -}}"
-                    {{ if findRE `^http` .URL }}
+                  <a class="nav-dropdown-link {{ if $active }} active {{- end -}}" {{ if findRE `^http` .URL }}
                       target="_blank" rel="noopener"
                     {{ end }}
                     href="{{- if findRE `^#` .URL -}}
@@ -85,8 +88,31 @@
         {{ end }}
       {{ end }}
     </ul>
-
     <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+        <ul>
+            {{ $currentPage := . }}
+            {{ with index site.Menus.aside 0 }}
+            {{ $menuURL := .URL | absLangURL }}
+            {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+            {{ $active := eq $menuURL $pageURL }}
+            <li class="nav-item">
+                <a
+                    class="nav-link-aside {{ if $active }}active{{- end -}}"
+                    {{ if findRE `^http` .URL }}
+                    target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{- if findRE `^#` .URL -}}
+                    {{- if not $.IsHome -}}
+                    {{- site.Home.RelPermalink -}}
+                    {{- end }}{{- .URL -}}
+                    {{- else -}}
+                    {{- .URL | relLangURL -}}
+                    {{- end -}}"
+                    >{{ .Name }}
+                </a>
+            </li>
+            {{end}}
+        </ul>
       {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-theme-light rounded") }}
     </div>
   </nav>
