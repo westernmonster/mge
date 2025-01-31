@@ -10,3 +10,7 @@
   @import "components";
   @import "navigation";
 }
+
+@layer page {
+    @import "mge"
+}

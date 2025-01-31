@@ -12,7 +12,6 @@
             </div>
             <div class="md:col-4 lg:col-4 text-left">
                 <div class="content">
-
                     {{ $image:= .Params.cover }}
                     {{ if $image }}
                     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded" "size" "120x120") }}
