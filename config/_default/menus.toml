@@ -40,7 +40,7 @@ weight = 6
 [[main]]
 identifier = "mti"
 parent = "services"
-name = "Newah Tek Indonesia"
+name = "Mewah Tek Indonesia"
 url = "/services/mti/"
 weight = 7
 

@@ -1,8 +1,8 @@
-.mge.section-0 {
+.pki.section-0 {
     .banner {
         position: relative;
         height: 25rem;
-        background-image: url('/services/mge/images/bridge.jpg');
+        background-image: url('/services/pki/images/bridge.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -29,7 +29,7 @@
     }
 }
 
-.mge.section-3 {
+.pki.section-3 {
     .services {
         @apply text-center justify-center;
         .title {
@@ -40,26 +40,26 @@
             height: 6rem;
             width: 6rem;
             margin: 0 auto;
-            background-image: url('/services/mge/images/circle1.png');
+            background-image: url('/services/pki/images/circle1.png');
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 50%;
             display: block;
         }
         i.circle1 {
-            background-image: url('/services/mge/images/circle1.png');
+            background-image: url('/services/pki/images/circle1.png');
         }
         i.circle2 {
-            background-image: url('/services/mge/images/circle2.png');
+            background-image: url('/services/pki/images/circle2.png');
         }
         i.circle3 {
-            background-image: url('/services/mge/images/circle3.png');
+            background-image: url('/services/pki/images/circle3.png');
         }
         i.circle4 {
-            background-image: url('/services/mge/images/circle1.png');
+            background-image: url('/services/pki/images/circle1.png');
         }
         i.circle5 {
-            background-image: url('/services/mge/images/circle5.png');
+            background-image: url('/services/pki/images/circle5.png');
         }
     }
 }
