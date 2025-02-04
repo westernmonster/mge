@@ -1,6 +1,5 @@
 ---
-title: "Investors"
+title: "News"
 cover: "images/bridge.jpg"
 ---
-
 
