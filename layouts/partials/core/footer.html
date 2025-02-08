@@ -177,20 +177,20 @@
         <div>
           {{ site.Title }}
         </div>
-        <ul class="social-icons">
-          {{ range site.Data.social.main }}
-            <li>
-              <a
-                target="_blank"
-                aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
-                {{ $image := resources.Get .icon }}
-                <img src="{{ $image.RelPermalink }}" />
-              </a>
-            </li>
-          {{ end }}
-        </ul>
+        <!-- <ul class="social-icons"> -->
+        <!--   {{ range site.Data.social.main }} -->
+        <!--     <li> -->
+        <!--       <a -->
+        <!--         target="_blank" -->
+        <!--         aria-label="{{ .name }}" -->
+        <!--         rel="nofollow noopener" -->
+        <!--         href="{{ .link | safeURL }}"> -->
+        <!--         {{ $image := resources.Get .icon }} -->
+        <!--         <img src="{{ $image.RelPermalink }}" /> -->
+        <!--       </a> -->
+        <!--     </li> -->
+        <!--   {{ end }} -->
+        <!-- </ul> -->
       </div>
     </div>
   </div>

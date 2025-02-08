@@ -1,0 +1,20 @@
+<div class="row bg-body dark:bg-darkmode-body">
+    <div class="col-4">
+        {{ $image:= .Params.image }}
+        {{ if $image }}
+        {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+        {{ end }}
+    </div>
+    <div class="col-8">
+        <h4 class="mb-3">
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+        </h4>
+        <p class="mb-6">{{ .Summary | plainify }}</p>
+        <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+            {{ T "read_more" }}
+        </a>
+    </div>
+</div>
+
