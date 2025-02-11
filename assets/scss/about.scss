@@ -1,0 +1,46 @@
+.about {
+    h2 {
+        @apply text-3xl #{!important};
+        font-family: "Rufina", serif !important;
+    }
+}
+.about.section-1 {
+    p {
+        font-family: "Rambla", serif !important;
+        font-style: italic;
+    }
+}
+
+.about.section-2,.about.section-3 {
+    p {
+        font-family: "Open Sans", serif !important;
+        font-optical-sizing: auto !important;
+        font-variation-settings: "wdth" 100;
+    }
+}
+
+.rambla {
+  font-family: "Rambla", serif !important;
+}
+.ptsans {
+    font-family: "PT Sans", serif !important;
+}
+
+.rufina {
+  font-family: "Rufina", serif !important;
+}
+
+.magra {
+  font-family: "Magra", serif !important;
+}
+.archivo-narrow {
+  font-family: "Archivo Narrow", serif !important;
+  font-optical-sizing: auto !important;
+}
+
+.open-sans {
+  font-family: "Open Sans", serif !important;
+  font-optical-sizing: auto !important;
+  font-variation-settings: "wdth" 100;
+}
+
