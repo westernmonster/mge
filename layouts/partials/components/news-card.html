@@ -11,10 +11,7 @@
                 {{ .Title }}
             </a>
         </h4>
-        <p class="mb-6">{{ .Summary | plainify }}</p>
-        <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
-            {{ T "read_more" }}
-        </a>
+        <p class="mb-6">{{ .Summary | plainify | strings.Truncate 200 }}</p>
     </div>
 </div>
 
