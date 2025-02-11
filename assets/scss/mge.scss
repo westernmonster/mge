@@ -48,6 +48,11 @@
     }
 }
 
-.mge.section-3 {
+.mge.section-1 {
+    .item {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
 }
 
