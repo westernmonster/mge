@@ -97,16 +97,31 @@
         </div>
     </div>
 </section>
-<section class="home section-3">
-    <div class="container">
+<section class="home section-3 mt-6">
+    <div class="container bg-theme-light  md:p-10 lg:p-15">
+        <ul>
+            {{range ( where .Site.RegularPages.ByDate "Section" "news" | first 5 )}}
+            <li class="row py-2">
+                <div class="col-1">
+                    NEW
+                </div>
+                <div class="col-3">
+                    {{ time.Format ":date_long" .PublishDate }}
+                </div>
+                <div class="col-8">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
     </div>
 </section>
-<section class="home section-3">
+<section class="home section-4 mt-6">
     <div class="container">
         <div class="row justify-center">
             <div class="md:col-6 lg:col-6">
-                <h3>Our Partners</h3>
-                <p>
+                <h3 class="rambla mb-2 text-sky-600 text-center">Our Partners</h3>
+                <p class="open-sans italic text-center">
                 We are committed to building long-term partnerships.
                 </p>
             </div>
