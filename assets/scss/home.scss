@@ -1,0 +1,67 @@
+
+.banner01 {
+    background-image: url("/images/swiper01.png");
+    background-size: cover;
+}
+.banner02 {
+    background-image: url("/images/swiper01.png");
+    background-size: cover;
+}
+
+.banner03 {
+    background-image: url("/images/swiper01.png");
+    background-size: cover;
+}
+
+.home {
+    .swiper {
+        height:100%;
+        position: relative;
+    }
+    .banner {
+        min-height: 20rem;
+    }
+
+    .testimonial-slider-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+    }
+    .swiper-slide {
+        h4 {
+        }
+    }
+}
+
+.home.section-2 {
+    .item {
+        position: relative;
+        height:100%;
+    }
+    .item1 {
+        background-image: url("/images/home01.jpg");
+        background-size: cover;
+    }
+    .item2 {
+        background-image: url("/images/home02.jpg");
+        background-size: cover;
+    }
+    .item3 {
+        background-image: url("/images/home03.jpg");
+        background-size: cover;
+    }
+    .title {
+    }
+}
+.home {
+    .bg-home {
+        background-color: #b57b55;
+    }
+
+}
+
+.readmore a {
+    @apply bg-amber-500 hover:bg-amber-700;
+}

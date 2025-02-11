@@ -2,17 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   @import "base";
+  @import "font";
 }
 
 @layer components {
   @import "components";
   @import "navigation";
+  @import "buttons";
 }
+
+
+@layer utilities {
+  @import "utilities";
+}
+
+@import "search";
+@import "social-share";
+@import "gallery-slider";
+@import "images";
+@import "toc";
+@import "tab";
+@import "accordion";
+@import "modal";
+@import "notice";
+
+@import "module-overrides";
 
 @layer page {
     @import "pki";
     @import "mti";
     @import "mge";
+    @import "home";
 }
