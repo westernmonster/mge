@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
-  <section class="news section-1">
+  <section class="news posts section-1">
       <div class="container">
           <div class="row gx-5">
               <!-- blog posts -->
@@ -21,7 +21,12 @@
                   <div class="row">
                       <div class="md:col-12 mb-14">
                           {{ range first 1 (where .Site.RegularPages "Section" "investors")}}
-                          {{.Content}}
+                          <h1 class="h2 mb-4">
+                              {{ .Title }}
+                          </h1>
+                          <div>
+                              {{.Content}}
+                          </div>
                           {{end}}
                       </div>
                   </div>

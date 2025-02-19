@@ -43,3 +43,18 @@
 .grid-item {
     display: none;
 }
+
+.posts {
+  p {
+      font-family: "Open Sans", serif !important;
+      font-optical-sizing: auto !important;
+      font-variation-settings: "wdth" 100;
+      word-wrap: break-word;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+  }
+}
