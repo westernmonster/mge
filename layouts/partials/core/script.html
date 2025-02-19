@@ -41,6 +41,20 @@
   crossorigin="anonymous"
   integrity="{{ $scriptsLazy.Data.Integrity }}"
   src="{{ $scriptsLazy.RelPermalink }}"></script>
+<script>
+    $(document).ready(function(){
+        $(".grid-item").slice(0, 4).show();
+        $("#loadMore").on("click", function(e){
+            e.preventDefault();
+            $(".grid-item:hidden").slice(0, 4).slideDown();
+            if($(".grid-item:hidden").length == 0) {
+                $("#loadMore").text("").addClass("noContent");
+            }
+        });
+
+    })
+
+</script>
 
 <!-- progressive web app -->
 {{ partialCached "pwa.html" . }}

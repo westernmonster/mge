@@ -134,6 +134,9 @@ lazy = false
 link = "plugins/swiper/swiper-bundle.js"
 lazy = false
 [[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+lazy = false
+[[params.plugins.js]]
 link = "plugins/cookie.js"
 lazy = false
 [[params.plugins.js]]
