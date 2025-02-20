@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+<section class="about section-1">
+    <div class="container">
+        <div class="row">
+            <div class="md:col-8 lg:col-8 text-left">
+                <div class="content">
+                    {{ with .Resources.Get "snippets/sec1.md" }}
+                    {{ .Content}}
+                    {{end}}
+                </div>
+            </div>
+            <div class="md:col-4 lg:col-4 text-left">
+                <div class="content">
+                    {{ $image:= .Params.cover }}
+                    {{ if $image }}
+                    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded" "size" "120x120") }}
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about section-2">
+    <div class="container">
+        <div class="row">
+            <div class="md:col-12 lg:col-12 text-left">
+                <div class="content">
+                    {{ with .Resources.Get "snippets/sec2.md" }}
+                    {{ .Content}}
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about section-3">
+    <div class="container">
+        <div class="row">
+            <div class="md:col-12 lg:col-12 text-left">
+                <div class="content">
+                    {{ with .Resources.Get "snippets/sec3.md" }}
+                    {{ .Content}}
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+
+

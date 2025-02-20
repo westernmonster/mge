@@ -1,0 +1,43 @@
+
+{{ define "main" }}
+  {{ partial "page-header" . }}
+  <section class="news posts section-1">
+      <div class="container">
+          <div class="row gx-5">
+              <!-- blog posts -->
+              <div class="investors-nav lg:col-2">
+                  <!-- widget -->
+                  {{ range $index, $el := (where .Site.RegularPages "Section" "investors") }}
+                  <div class="grid-item ma0 pa0" id="" >
+                      <a href="{{ .RelPermalink }}">
+                          {{ time.Format ":date_long" .PublishDate }}
+                      </a>
+                  </div>
+                  {{ end }}
+                  <p>
+                  <button class="view-more-button" id="loadMore">View more</button>
+                  </p>
+              </div>
+              <div class="lg:col-10">
+                  <div class="row">
+                      <div class="md:col-12 mb-14">
+                          {{ range first 1 (where .Site.RegularPages "Section" "investors")}}
+                          <h1 class="h2 mb-4">
+                              {{ .Title }}
+                          </h1>
+                          <div>
+                              {{.Content}}
+                          </div>
+                          {{end}}
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+{{ end }}
+
+
+
+
+

@@ -1,5 +1,8 @@
 ---
-title: "关于我们"
-layout: "single.cn"
+title: "About Us"
+layout: "about.cn"
+type: "page"
+draft: false  
+cover: "images/cover.jpg"
 ---
 

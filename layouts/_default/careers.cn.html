@@ -1,0 +1,85 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+<section class="careers section-0">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="md:col-12 lg:col-12">
+                <div class="content">
+                    <h2 class="text-2xl rufina font-semibold">
+                        Join Our Company
+                    </h2>
+                    <p class="open-sans">
+                    We encompass various departments such as marketing and customer service, operations, and more, offering a diverse range of positions. Some of these positions require applicants to possess top-tier professional knowledge and experience, while there are also suitable opportunities for fresh graduates. Please submit your application and resume below:
+                    </p>
+                    <div class="justify-center text-center">
+                        <a href="#" class="inline-block text-white email-link px-3 py-2">
+                            jobs@mewalglobal.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="careers section-1 mt-6">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="md:col-12 lg:col-12">
+                <div class="tab" data-tab-group="">
+                    <ul class="tab-nav flex" data-tab-nav>
+                        <li
+                            class="tab-nav-item active w-64 flex-auto justify-center text-center"
+                            data-tab="tab-1" tabindex="0">
+                            PTMA Konsultan Indonesia
+                        </li>
+
+                        <li
+                            class="tab-nav-item w-64 flex-auto justify-center text-center"
+                            data-tab="tab-2" tabindex="-1">
+                            Mewah Sourcing Company
+                        </li>
+
+                        <li
+                            class="tab-nav-item w-64 flex-auto justify-center text-center"
+                            data-tab="tab-3" tabindex="-1">
+                            Mewah Tek Indonesia
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" data-tab-content>
+
+                        <div
+                            class="tab-content-panel active"
+                            data-tab-panel="tab-1">
+                            {{ with .Resources.Get "snippets/sec1.md" }}
+                            {{ .Content}}
+                            {{end}}
+                        </div>
+
+                        <div
+                            class="tab-content-panel "
+                            data-tab-panel="tab-2">
+                            {{ with .Resources.Get "snippets/sec2.md" }}
+                            {{ .Content}}
+                            {{end}}
+
+                        </div>
+
+                        <div
+                            class="tab-content-panel "
+                            data-tab-panel="tab-3">
+                            {{ with .Resources.Get "snippets/sec3.md" }}
+                            {{ .Content}}
+                            {{end}}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+
+

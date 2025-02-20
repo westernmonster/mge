@@ -1,5 +1,5 @@
 ---
-title: "Mewah Global Enterprise"
-layout: "mge.en"
+title: "Contact"
+layout: "contact.cn"
 cover: "images/bridge.jpg"
 ---
