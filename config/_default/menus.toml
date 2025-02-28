@@ -13,7 +13,7 @@ weight = 2
 
 [[main]]
 identifier = "news"
-name = "New & Insights"
+name = "News & Insights"
 url = "/news/"
 weight = 3
 
@@ -26,7 +26,7 @@ weight = 4
 [[main]]
 identifier = "mge"
 parent = "services"
-name = "Mewah Global Enterprise"
+name = "Mewah Sourcing Enterprise"
 url = "/services/mge/"
 weight = 5
 

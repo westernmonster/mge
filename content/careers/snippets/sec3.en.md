@@ -9,7 +9,7 @@ Requirements: <br />
 Candidates with experience in the financial or consulting industry are preferred.
 Strong learning ability and high professionalism are required.
 
-Company Recruitment Email: jobs@mewalglobal.cn <br />
+Company Recruitment Email: jobs@mewahglobal.cn <br />
 Please indicate the position you are applying for and your name in the email subject.
 
 ### Customer Service
@@ -23,7 +23,7 @@ Requirements: <br />
 Candidates with experience in the financial or consulting industry are preferred.
 Strong learning ability and high professionalism are required.
 
-Company Recruitment Email: jobs@mewalglobal.cn<br/<
+Company Recruitment Email: jobs@mewahglobal.cn<br/<
 Please indicate the position you are applying for and your name in the email subject.
 
 ### Investment Advisor
@@ -34,6 +34,6 @@ Requirements:<br />
 Candidates with experience in the financial or consulting industry are preferred.<br />
 Strong learning ability and high professionalism are required.
 
-Company Recruitment Email: jobs@mewalglobal.cn<br />
+Company Recruitment Email: jobs@mewahglobal.cn<br />
 Please indicate the position you are applying for and your name in the email subject.
 
