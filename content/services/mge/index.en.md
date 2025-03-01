@@ -1,5 +1,5 @@
 ---
-title: "Mewah Global Enterprise"
+title: "Mewah Sourcing Enterprise"
 layout: "mge.en"
 cover: "images/bridge.jpg"
 ---

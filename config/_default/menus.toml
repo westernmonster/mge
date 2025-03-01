@@ -64,7 +64,7 @@ url = "/about"
 weight = 1
 
 [[footer]]
-name = "New & Insights"
+name = "News & Insights"
 url = "/news"
 weight = 3
 
@@ -74,7 +74,7 @@ url = "/investors"
 weight = 4
 
 [[footer]]
-name = "Mewah Global Enterprise"
+name = "Mewah Sourcing Enterprise"
 url = "/services/mge"
 weight = 5
 
