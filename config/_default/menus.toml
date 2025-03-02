@@ -26,7 +26,7 @@ weight = 4
 [[main]]
 identifier = "mge"
 parent = "services"
-name = "Mewah Sourcing Enterprise"
+name = "Mewah Sourcing Company"
 url = "/services/mge/"
 weight = 5
 
@@ -74,7 +74,7 @@ url = "/investors"
 weight = 4
 
 [[footer]]
-name = "Mewah Sourcing Enterprise"
+name = "Mewah Sourcing Company"
 url = "/services/mge"
 weight = 5
 
