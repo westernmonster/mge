@@ -24,17 +24,17 @@ url = "/investors/"
 weight = 4
 
 [[main]]
-identifier = "mge"
+identifier = "msc"
 parent = "services"
 name = "Mewah Sourcing Company"
-url = "/services/mge/"
+url = "/services/msc/"
 weight = 5
 
 [[main]]
 identifier = "pki"
 parent = "services"
 name = "PTMA Konsultan Indonesia"
-url = "/services/pki/"
+url = "/services/ptma/"
 weight = 6
 
 [[main]]
@@ -75,12 +75,12 @@ weight = 4
 
 [[footer]]
 name = "Mewah Sourcing Company"
-url = "/services/mge"
+url = "/services/msc"
 weight = 5
 
 [[footer]]
 name = "PTMA Konsultan Indonesia"
-url = "/services/pki"
+url = "/services/ptma"
 weight = 6
 
 [[footer]]
