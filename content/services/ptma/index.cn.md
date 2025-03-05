@@ -1,5 +1,5 @@
 ---
 title: "PTMA Konsultan Indonesia"
-layout: "pki.en"
+layout: "ptma.cn"
 ---
 

@@ -1,5 +1,5 @@
 ---
 title: "Mewah Sourcing Company"
-layout: "mge.cn"
+layout: "msc.cn"
 cover: "images/bridge.jpg"
 ---
